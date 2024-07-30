@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-class MouseMovements {
+class MouseMovements_1 {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\resources\\chromedriver_126.exe");
 		WebDriver driver = new ChromeDriver();
