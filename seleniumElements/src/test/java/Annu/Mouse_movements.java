@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 class Mouse_movements {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications"); //To disable the notifications
 		options.addArguments("force-device-scale-factor=0.90");
@@ -41,8 +41,6 @@ class Mouse_movements {
 		action.moveByOffset(100,150).build().perform();
 		action.release().build().perform();
 	
-		
-	}
-	}
 
+	}
 }
