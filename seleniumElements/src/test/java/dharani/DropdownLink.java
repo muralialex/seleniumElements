@@ -1,6 +1,7 @@
 package dharani;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,9 @@ public class DropdownLink {
 		Actions action =new Actions(driver);
 		action.moveToElement(findElement).build().perform();
 		
-		
+		List<WebElement> list = driver.findElements(By.xpath("//div[@class='dropdown-content']//a"));
+		for(int i=0; i<list.size(); i++)
+		System.out.println(list.get(i).getText());
 	}
 
 }
