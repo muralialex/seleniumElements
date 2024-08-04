@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -28,6 +30,9 @@ class AutoSuggest {
 		driver.findElement(By.xpath("//textarea[@aria-label='Search']")).sendKeys("Welcome");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Welcome Home']/ancestor::li")));
 		driver.findElement(By.xpath("//*[text()='Welcome Home']/ancestor::li")).click();
+
+
+
 	}
 
 }
